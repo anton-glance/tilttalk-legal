@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tilt Talk — Open-Source Licenses</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 720px; margin: 0 auto; padding: 32px 20px 80px;
+    color: #1c1c1e; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e5e5ea; background: #1c1c1e; }
+    a { color: #6cb6ff; }
+  }
+  header { border-bottom: 1px solid rgba(127,127,127,.25); margin-bottom: 24px; padding-bottom: 12px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  header .sub { font-size: 13px; opacity: .65; }
+  nav { font-size: 13px; margin-top: 8px; }
+  nav a { margin-right: 14px; }
+  p { margin: 0 0 14px; }
+  strong { font-weight: 600; }
+  footer { margin-top: 40px; font-size: 12px; opacity: .6; border-top: 1px solid rgba(127,127,127,.25); padding-top: 14px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Tilt Talk</h1>
+  <div class="sub">Open-Source Licenses</div>
+  <nav>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="licenses.html">Licenses</a>
+    <a href="genai.html">Gen-AI</a>
+  </nav>
+</header>
+<main>
+<p>Tilt Talk is built with open-source software and on-device AI models. We are grateful to their authors. The components below are included in or used by the app, with their licenses. Full license texts are reproduced at the end of this document.</p>
+<p><strong>Software</strong></p>
+<p><strong>FluidAudio</strong> (FluidInference) — runtime for the Parakeet speech-recognition model. Licensed under the Apache License, Version 2.0.</p>
+<p><strong>MLX Swift</strong> (ml-explore / Apple) — on-device machine-learning framework. Licensed under the MIT License. Copyright (c) 2023 ml-explore.</p>
+<p><strong>MLX Swift Examples</strong> (ml-explore / Apple) — language-model inference layer (MLXLLM, MLXLMCommon). Licensed under the MIT License.</p>
+<p><strong>Swift Transformers</strong> (Hugging Face) — tokenizers and model utilities, used by the translation engine. Licensed under the Apache License, Version 2.0.</p>
+<p>Additional transitive dependencies of the components above are distributed under their respective permissive open-source licenses (MIT or Apache License 2.0).</p>
+<p><strong>AI models</strong></p>
+<p><strong>Parakeet TDT 0.6B v3</strong> (NVIDIA) — multilingual speech-recognition model, downloaded to your device at first launch. Licensed under the Creative Commons Attribution 4.0 International License (CC-BY-4.0). Copyright NVIDIA Corporation. The full license is available at creativecommons.org/licenses/by/4.0/legalcode. The model is used without modification to its weights.</p>
+<p><strong>TranslateGemma 4B</strong> (Google) — translation model, downloaded to supported devices. Tilt Talk uses a modified version of this model: a 4-bit quantized build converted to Apple&#x27;s MLX format (distributed as &quot;mlx-community/translategemma-4b-it-4bit&quot;). This is a Model Derivative of Google&#x27;s TranslateGemma 4B and has been modified from the original published files. Required notice:</p>
+<p>Gemma is provided under and subject to the Gemma Terms of Use found at ai.google.dev/gemma/terms.</p>
+<p>Your use of the translation feature is also subject to the Gemma Prohibited Use Policy at ai.google.dev/gemma/prohibited_use_policy. Gemma is a trademark of Google LLC. The Gemma Terms of Use and Prohibited Use Policy are made available to you at the URLs above.</p>
+<p><strong>Apple frameworks</strong></p>
+<p>The app also uses Apple system frameworks (including Speech, Translation, AVFoundation, and Core Motion) under Apple&#x27;s standard software license terms; these require no separate attribution here.</p>
+<p>----------------------------------------</p>
+<p><strong>Full license text — MIT License</strong></p>
+<p>The following applies to MLX Swift and MLX Swift Examples.</p>
+<p>MIT License</p>
+<p>Copyright (c) 2023 ml-explore</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy<br>
+of this software and associated documentation files (the &quot;Software&quot;), to deal<br>
+in the Software without restriction, including without limitation the rights<br>
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell<br>
+copies of the Software, and to permit persons to whom the Software is<br>
+furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all<br>
+copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR<br>
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,<br>
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE<br>
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER<br>
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,<br>
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE<br>
+SOFTWARE.</p>
+<p>----------------------------------------</p>
+<p><strong>Full license text — Apache License, Version 2.0</strong></p>
+<p>The following applies to FluidAudio and Swift Transformers.</p>
+<p>                                 Apache License<br>
+                           Version 2.0, January 2004<br>
+                        http://www.apache.org/licenses/</p>
+<p>   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION</p>
+<p>   1. Definitions.</p>
+<p>      &quot;License&quot; shall mean the terms and conditions for use, reproduction,<br>
+      and distribution as defined by Sections 1 through 9 of this document.</p>
+<p>      &quot;Licensor&quot; shall mean the copyright owner or entity authorized by<br>
+      the copyright owner that is granting the License.</p>
+<p>      &quot;Legal Entity&quot; shall mean the union of the acting entity and all<br>
+      other entities that control, are controlled by, or are under common<br>
+      control with that entity. For the purposes of this definition,<br>
+      &quot;control&quot; means (i) the power, direct or indirect, to cause the<br>
+      direction or management of such entity, whether by contract or<br>
+      otherwise, or (ii) ownership of fifty percent (50%) or more of the<br>
+      outstanding shares, or (iii) beneficial ownership of such entity.</p>
+<p>      &quot;You&quot; (or &quot;Your&quot;) shall mean an individual or Legal Entity<br>
+      exercising permissions granted by this License.</p>
+<p>      &quot;Source&quot; form shall mean the preferred form for making modifications,<br>
+      including but not limited to software source code, documentation<br>
+      source, and configuration files.</p>
+<p>      &quot;Object&quot; form shall mean any form resulting from mechanical<br>
+      transformation or translation of a Source form, including but<br>
+      not limited to compiled object code, generated documentation,<br>
+      and conversions to other media types.</p>
+<p>      &quot;Work&quot; shall mean the work of authorship, whether in Source or<br>
+      Object form, made available under the License, as indicated by a<br>
+      copyright notice that is included in or attached to the work<br>
+      (an example is provided in the Appendix below).</p>
+<p>      &quot;Derivative Works&quot; shall mean any work, whether in Source or Object<br>
+      form, that is based on (or derived from) the Work and for which the<br>
+      editorial revisions, annotations, elaborations, or other modifications<br>
+      represent, as a whole, an original work of authorship. For the purposes<br>
+      of this License, Derivative Works shall not include works that remain<br>
+      separable from, or merely link (or bind by name) to the interfaces of,<br>
+      the Work and Derivative Works thereof.</p>
+<p>      &quot;Contribution&quot; shall mean any work of authorship, including<br>
+      the original version of the Work and any modifications or additions<br>
+      to that Work or Derivative Works thereof, that is intentionally<br>
+      submitted to Licensor for inclusion in the Work by the copyright owner<br>
+      or by an individual or Legal Entity authorized to submit on behalf of<br>
+      the copyright owner. For the purposes of this definition, &quot;submitted&quot;<br>
+      means any form of electronic, verbal, or written communication sent<br>
+      to the Licensor or its representatives, including but not limited to<br>
+      communication on electronic mailing lists, source code control systems,<br>
+      and issue tracking systems that are managed by, or on behalf of, the<br>
+      Licensor for the purpose of discussing and improving the Work, but<br>
+      excluding communication that is conspicuously marked or otherwise<br>
+      designated in writing by the copyright owner as &quot;Not a Contribution.&quot;</p>
+<p>      &quot;Contributor&quot; shall mean Licensor and any individual or Legal Entity<br>
+      on behalf of whom a Contribution has been received by Licensor and<br>
+      subsequently incorporated within the Work.</p>
+<p>   2. Grant of Copyright License. Subject to the terms and conditions of<br>
+      this License, each Contributor hereby grants to You a perpetual,<br>
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable<br>
+      copyright license to reproduce, prepare Derivative Works of,<br>
+      publicly display, publicly perform, sublicense, and distribute the<br>
+      Work and such Derivative Works in Source or Object form.</p>
+<p>   3. Grant of Patent License. Subject to the terms and conditions of<br>
+      this License, each Contributor hereby grants to You a perpetual,<br>
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable<br>
+      (except as stated in this section) patent license to make, have made,<br>
+      use, offer to sell, sell, import, and otherwise transfer the Work,<br>
+      where such license applies only to those patent claims licensable<br>
+      by such Contributor that are necessarily infringed by their<br>
+      Contribution(s) alone or by combination of their Contribution(s)<br>
+      with the Work to which such Contribution(s) was submitted. If You<br>
+      institute patent litigation against any entity (including a<br>
+      cross-claim or counterclaim in a lawsuit) alleging that the Work<br>
+      or a Contribution incorporated within the Work constitutes direct<br>
+      or contributory patent infringement, then any patent licenses<br>
+      granted to You under this License for that Work shall terminate<br>
+      as of the date such litigation is filed.</p>
+<p>   4. Redistribution. You may reproduce and distribute copies of the<br>
+      Work or Derivative Works thereof in any medium, with or without<br>
+      modifications, and in Source or Object form, provided that You<br>
+      meet the following conditions:</p>
+<p>      (a) You must give any other recipients of the Work or<br>
+          Derivative Works a copy of this License; and</p>
+<p>      (b) You must cause any modified files to carry prominent notices<br>
+          stating that You changed the files; and</p>
+<p>      (c) You must retain, in the Source form of any Derivative Works<br>
+          that You distribute, all copyright, patent, trademark, and<br>
+          attribution notices from the Source form of the Work,<br>
+          excluding those notices that do not pertain to any part of<br>
+          the Derivative Works; and</p>
+<p>      (d) If the Work includes a &quot;NOTICE&quot; text file as part of its<br>
+          distribution, then any Derivative Works that You distribute must<br>
+          include a readable copy of the attribution notices contained<br>
+          within such NOTICE file, excluding those notices that do not<br>
+          pertain to any part of the Derivative Works, in at least one<br>
+          of the following places: within a NOTICE text file distributed<br>
+          as part of the Derivative Works; within the Source form or<br>
+          documentation, if provided along with the Derivative Works; or,<br>
+          within a display generated by the Derivative Works, if and<br>
+          wherever such third-party notices normally appear. The contents<br>
+          of the NOTICE file are for informational purposes only and<br>
+          do not modify the License. You may add Your own attribution<br>
+          notices within Derivative Works that You distribute, alongside<br>
+          or as an addendum to the NOTICE text from the Work, provided<br>
+          that such additional attribution notices cannot be construed<br>
+          as modifying the License.</p>
+<p>      You may add Your own copyright statement to Your modifications and<br>
+      may provide additional or different license terms and conditions<br>
+      for use, reproduction, or distribution of Your modifications, or<br>
+      for any such Derivative Works as a whole, provided Your use,<br>
+      reproduction, and distribution of the Work otherwise complies with<br>
+      the conditions stated in this License.</p>
+<p>   5. Submission of Contributions. Unless You explicitly state otherwise,<br>
+      any Contribution intentionally submitted for inclusion in the Work<br>
+      by You to the Licensor shall be under the terms and conditions of<br>
+      this License, without any additional terms or conditions.<br>
+      Notwithstanding the above, nothing herein shall supersede or modify<br>
+      the terms of any separate license agreement you may have executed<br>
+      with Licensor regarding such Contributions.</p>
+<p>   6. Trademarks. This License does not grant permission to use the trade<br>
+      names, trademarks, service marks, or product names of the Licensor,<br>
+      except as required for reasonable and customary use in describing the<br>
+      origin of the Work and reproducing the content of the NOTICE file.</p>
+<p>   7. Disclaimer of Warranty. Unless required by applicable law or<br>
+      agreed to in writing, Licensor provides the Work (and each<br>
+      Contributor provides its Contributions) on an &quot;AS IS&quot; BASIS,<br>
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or<br>
+      implied, including, without limitation, any warranties or conditions<br>
+      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A<br>
+      PARTICULAR PURPOSE. You are solely responsible for determining the<br>
+      appropriateness of using or redistributing the Work and assume any<br>
+      risks associated with Your exercise of permissions under this License.</p>
+<p>   8. Limitation of Liability. In no event and under no legal theory,<br>
+      whether in tort (including negligence), contract, or otherwise,<br>
+      unless required by applicable law (such as deliberate and grossly<br>
+      negligent acts) or agreed to in writing, shall any Contributor be<br>
+      liable to You for damages, including any direct, indirect, special,<br>
+      incidental, or consequential damages of any character arising as a<br>
+      result of this License or out of the use or inability to use the<br>
+      Work (including but not limited to damages for loss of goodwill,<br>
+      work stoppage, computer failure or malfunction, or any and all<br>
+      other commercial damages or losses), even if such Contributor<br>
+      has been advised of the possibility of such damages.</p>
+<p>   9. Accepting Warranty or Additional Liability. While redistributing<br>
+      the Work or Derivative Works thereof, You may choose to offer,<br>
+      and charge a fee for, acceptance of support, warranty, indemnity,<br>
+      or other liability obligations and/or rights consistent with this<br>
+      License. However, in accepting such obligations, You may act only<br>
+      on Your own behalf and on Your sole responsibility, not on behalf<br>
+      of any other Contributor, and only if You agree to indemnify,<br>
+      defend, and hold each Contributor harmless for any liability<br>
+      incurred by, or claims asserted against, such Contributor by reason<br>
+      of your accepting any such warranty or additional liability.</p>
+<p>   END OF TERMS AND CONDITIONS</p>
+<p>   APPENDIX: How to apply the Apache License to your work.</p>
+<p>      To apply the Apache License to your work, attach the following<br>
+      boilerplate notice, with the fields enclosed by brackets &quot;[]&quot;<br>
+      replaced with your own identifying information. (Don&#x27;t include<br>
+      the brackets!)  The text should be enclosed in the appropriate<br>
+      comment syntax for the file format. We also recommend that a<br>
+      file or class name and description of purpose be included on the<br>
+      same &quot;printed page&quot; as the copyright notice for easier<br>
+      identification within third-party archives.</p>
+<p>   Copyright [yyyy] [name of copyright owner]</p>
+<p>   Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);<br>
+   you may not use this file except in compliance with the License.<br>
+   You may obtain a copy of the License at</p>
+<p>       http://www.apache.org/licenses/LICENSE-2.0</p>
+<p>   Unless required by applicable law or agreed to in writing, software<br>
+   distributed under the License is distributed on an &quot;AS IS&quot; BASIS,<br>
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.<br>
+   See the License for the specific language governing permissions and<br>
+   limitations under the License.</p>
+</main>
+<footer>Tilt Talk is published by Anton Zriashchev. This text matches the version shown inside the app.</footer>
+</body>
+</html>
